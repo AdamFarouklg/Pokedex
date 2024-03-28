@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@500&display=swap');
 
 * {
-  margin: 0;
+  margin: 0.5rem;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
   background-color: #F5F7Fb;
   scroll-behavior: smooth;
+}
+
+#h1{
+  font-size: 48px;
+  font-weight: bold;
 }
 
 #navbar {
@@ -50,8 +55,77 @@
   background-color: #00000000;
 }
 
+#searchbar {
+  margin: '0 auto';
+  border-radius: 15px;
+  background-color: #FFF; 
+  box-shadow: 3px 3px 3px rgb(33, 33, 33, 0.2);
+  
+}
+
+#searchbar-container {
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  justify-content: space-between; 
+}
+
+#searchbar-box {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #FFF;
+  width: 100%;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  background-color: #FFF;
+  color: #416EDF;
+}
+.search-input::placeholder {
+  color: #416EDF
+}
+
+#search-button {
+  background-color: #FFCE31;
+  color: #416EDF;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 25px;
+  cursor: pointer;
+  font: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.select-box {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.filter-button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .pokeCard {
-  width: 16rem;
+  width: 15rem;
   position: relative;
   background-color: #FFF;
   color: #060047;
