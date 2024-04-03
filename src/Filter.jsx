@@ -24,9 +24,9 @@ const ParentFilter = () => {
     let sortedList = [...pokemonList];
     
     // Sort the list based on the option (ascending or descending)
-    if (option === 'asc') {
+    if (option === 'Ascending') {
       sortedList.sort((a, b) => a.id - b.id);
-    } else if (option === 'desc') {
+    } else if (option === 'Descending') {
       sortedList.sort((a, b) => b.id - a.id);
     }
 
