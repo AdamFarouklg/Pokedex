@@ -14,10 +14,10 @@ const SearchBar = () => {
   };
 
   return (
-    <div id ="searchbar"> {/* Adjust width and margin as per your design */}
+    <div id ="searchbar"> 
       <div id ="searchbar-container">
         <div id="searchbar-box">
-          <FaSearch style={{ marginRight: '5px', color: '#416EDF', backgroundColor: '#FFF' }} />
+          <FaSearch className='search-icon' style={{ marginRight: '5px', color: '#416EDF', backgroundColor: '#FFF', size: 'large' }} />
           <input
             type="text"
             value={query}
