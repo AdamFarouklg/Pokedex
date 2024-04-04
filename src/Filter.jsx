@@ -22,22 +22,14 @@ const ParentFilter = () => {
 
   const handleFilter = (option) => {
     let sortedList = [...pokemonList];
-    
-    // Sort the list based on the option (ascending or descending)
-    if (option === 'Ascending') {
-      sortedList.sort((a, b) => a.id - b.id);
-    } else if (option === 'Descending') {
-      sortedList.sort((a, b) => b.id - a.id);
-    }
 
     setFilteredPokemonList(sortedList);
   };
 
   return (
     <div>
-      <h1>Pokedex Filter</h1>
       <FilterComponent
-        options={['Ascending', 'Descending']}
+        options={['Lowest Number First', 'Highest Number First', 'Alphabetically(A-Z)', 'Alphabettically(Z-A)']}
         onFilter={handleFilter}
       />
       <ul>

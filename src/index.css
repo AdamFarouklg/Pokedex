@@ -140,7 +140,7 @@ hr.solid {
   border-radius: 15px;
   background-color: #FFF; 
   box-shadow: 3px 3px 3px rgb(33, 33, 33, 0.2);
-  
+  padding: 0;
 }
 
 #searchbar-container {
@@ -150,6 +150,7 @@ hr.solid {
   border-radius: 15px;
   justify-content: space-between; 
   padding: 0;
+  height: fit-content;
 }
 
 #searchbar-box {
@@ -159,6 +160,7 @@ hr.solid {
   background-color: #FFF;
   width: 100%;
   padding: 0rem;
+  height: fit-content;
 }
 
 .search-input {
@@ -183,6 +185,7 @@ hr.solid {
   font: Roboto;
   font-weight: bold;
   font-size: 16px;
+  margin: -10px 0px -10px -5px;
 }
 
 .search-icon {
@@ -196,21 +199,40 @@ hr.solid {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 0px;
+  margin: 0px;
+
 }
 
 .select-box {
   padding: 8px;
   font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  border-color: rgb(214, 214, 214);
+  border-width: 2px;
+}
+
+.filter-content {
+  font-size: 16px;
 }
 
 .filter-button {
-  padding: 8px 15px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  padding: 10px 30px 0px 30px;
+  display: inline-flex;
+  text-align: top;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: solid rgb(214, 214, 214) !important;
+  border-width: 2px !important;
   cursor: pointer;
+}
+
+.filter-button >img {
+  width: 25px;
+  margin: -5px 5px 5px -5px;
+  /* display: block; */
 }
 
 .pokeCard {
@@ -589,10 +611,13 @@ ul.nav li:hover {
   background: #416EDF;
 }
 ul.nav li.active {
-  background: #416EDF;
+  /* background: #416EDF; */
   color: #212121;
   opacity: 100%;
   font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #416EDF;
+  text-decoration-thickness:2px ;
 }
 
 .FirstTab h3{
