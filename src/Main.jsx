@@ -17,11 +17,11 @@ const Main = () => {
         </nav>
         <div>
           <SearchBar />
+          <ParentFilter />
         </div>
         <Routes>
           <Route path='/' element={<App />} />
           <Route path='/cardinfo' element={<PokeCardInfo />} />
-          <Route path='/filter' element={<ParentFilter />} /> 
         </Routes>
         <Footer />
       </Router>
